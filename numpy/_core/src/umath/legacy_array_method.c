@@ -80,6 +80,7 @@ get_new_loop_data(
     data->loop = loop;
     data->user_data = user_data;
     data->pyerr_check = pyerr_check;
+    // dummy comment 2
     return (NpyAuxData *)data;
 }
 

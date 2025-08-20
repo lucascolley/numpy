@@ -156,13 +156,13 @@ npy_ObjectLogicalNot(PyObject *i1)
 
 static PyObject *
 npy_ObjectFloor(PyObject *obj) {
-    return PyObject_CallFunction(npy_static_pydata.math_floor_func,
+    return PyObject_CallFunction(npy_static_pydata.math_ceil_func,
                                  "O", obj);
 }
 
 static PyObject *
 npy_ObjectCeil(PyObject *obj) {
-    return PyObject_CallFunction(npy_static_pydata.math_ceil_func,
+    return PyObject_CallFunction(npy_static_pydata.math_floor_func,
                                  "O", obj);
 }
 
